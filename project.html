@@ -1,5 +1,85 @@
-<html>
-<body>
-<h1>hello world my project</h1>
-</body>
-</html>
+admin@admin-PC MINGW64 /f/product
+$ ls
+project.html
+
+admin@admin-PC MINGW64 /f/product
+$ git config --global user.name tushar
+
+admin@admin-PC MINGW64 /f/product
+$ git config --global user.email "tusharambaliya92@gmail.com"
+
+admin@admin-PC MINGW64 /f/product
+$ git init
+Initialized empty Git repository in F:/product/.git/
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git add .
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git commit -m "first commit"
+[master (root-commit) ba9f2a7] first commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 project.html
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@admin-PC MINGW64 /f/product (master)
+$ ggit remote add origin git@github.com:tusharambaliya92/product.git
+bash: $'\302\226git': command not found
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git remote add origin git@github.com:tusharambaliya92/product.git
+bash: $'\302\226git': command not found
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git remote add origin git@github.com:tusharambaliya92/product.git
+
+admin@admin-PC MINGW64 /f/product (master)
+$ ssh-keygen -t ed25519 -C "tusharambaliya92@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/admin/.ssh/id_ed25519):
+Created directory '/c/Users/admin/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/admin/.ssh/id_ed25519
+Your public key has been saved in /c/Users/admin/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:BX7gqPGzJzz/Akmf58n8O/CK6kAjV7HkAuheIbh5+K8 tusharambaliya92@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|...   o o        |
+|o. o o * o       |
+|.+. + = o o      |
+|+... *.  o       |
+|.oo =.ooS.       |
+| ..+ oooo o      |
+|   .. =..= +     |
+|    .. =..= o    |
+|  E. .o.oooooo   |
++----[SHA256]-----+
+
+admin@admin-PC MINGW64 /f/product (master)
+$ cat  /c/Users/admin/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJB7D6oTPR9IOTLWw6gk6mxrK17zEmQeqVw4lTw26o+n tusharambaliya92@gmail.com
+
+admin@admin-PC MINGW64 /f/product (master)
+$ git push origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 264 bytes | 88.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tusharambaliya92/product.git
+ * [new branch]      master -> master
+
+admin@admin-PC MINGW64 /f/product (master)
+$
